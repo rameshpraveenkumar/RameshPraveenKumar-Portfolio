@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="meBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="meLime" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8ce600"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8ce600" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8ce600" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#meBg)"/>
+
+  <!-- Decorative wellness circles -->
+  <circle cx="500" cy="80" r="120" fill="#6366f1" opacity="0.15"/>
+  <circle cx="100" cy="280" r="90" fill="#8ce600" opacity="0.12"/>
+
+  <!-- Window Container -->
+  <rect x="40" y="30" width="520" height="300" rx="16" fill="#0f172a" fill-opacity="0.85" stroke="#4338ca" stroke-width="1.5"/>
+  
+  <!-- Header -->
+  <rect x="40" y="30" width="520" height="42" rx="16" fill="#1e1b4b"/>
+  <circle cx="65" cy="51" r="5" fill="#f43f5e"/>
+  <circle cx="82" cy="51" r="5" fill="#fbbf24"/>
+  <circle cx="99" cy="51" r="5" fill="#10b981"/>
+  <text x="125" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#c7d2fe" font-weight="600">mindease-wellness // student-tracker-live</text>
+  <rect x="450" y="42" width="90" height="18" rx="9" fill="#8ce600" fill-opacity="0.2"/>
+  <text x="462" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#8ce600">HEALTHY</text>
+
+  <!-- Left Stats Card -->
+  <rect x="60" y="90" width="220" height="100" rx="12" fill="#1e1b4b" stroke="#312e81"/>
+  <text x="80" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#a5b4fc">DAILY STRESS INDEX</text>
+  <text x="80" y="152" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#8ce600">Low 18%</text>
+  <text x="80" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#94a3b8">↓ 14% improvement this week</text>
+
+  <!-- Right Tracker Card -->
+  <rect x="300" y="90" width="240" height="100" rx="12" fill="#1e1b4b" stroke="#312e81"/>
+  <text x="320" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#a5b4fc">FOCUS SESSIONS</text>
+  <text x="320" y="152" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#38bdf8">4.5 hrs</text>
+  <text x="320" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#94a3b8">3 mindful breaks completed</text>
+
+  <!-- Calming Rhythm Wave at Bottom -->
+  <g transform="translate(60, 205)">
+    <rect width="480" height="105" rx="12" fill="#1e1b4b" stroke="#312e81"/>
+    <text x="20" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#a5b4fc">BIO-RHYTHM &amp; MOOD TELEMETRY</text>
+
+    <!-- Wave curve -->
+    <path d="M 20 75 Q 80 40 140 65 T 260 55 T 380 45 T 460 65 L 460 90 L 20 90 Z" fill="url(#waveGrad)"/>
+    <path d="M 20 75 Q 80 40 140 65 T 260 55 T 380 45 T 460 65" fill="none" stroke="url(#meLime)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

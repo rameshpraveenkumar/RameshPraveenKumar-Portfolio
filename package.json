@@ -1,14 +1,11 @@
 {
-  "name": "portfolio-website",
+  "name": "ramesh-praveen-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Monochrome Editorial Developer & Designer Portfolio",
+  "description": "Personal Portfolio - Ramesh Praveen Kumar",
   "type": "module",
   "scripts": {
-    "dev": "python3 -m http.server 8080",
-    "start": "python3 -m http.server 8080"
-  },
-  "dependencies": {
-    "@fiddle-digital/string-tune": "^1.2.0"
+    "start": "npx serve .",
+    "dev": "npx serve ."
   }
 }

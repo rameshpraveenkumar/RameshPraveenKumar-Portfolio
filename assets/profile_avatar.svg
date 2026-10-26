@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5fedc"/>
+      <stop offset="50%" stop-color="#ebfbc2"/>
+      <stop offset="100%" stop-color="#dcf79c"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b4859"/>
+      <stop offset="100%" stop-color="#232d3a"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8d5b8"/>
+      <stop offset="100%" stop-color="#e5b894"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="100%" stop-color="#0f0f0f"/>
+    </linearGradient>
+    <linearGradient id="limeBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8ce600"/>
+      <stop offset="100%" stop-color="#72c200"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e293b" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="500" height="560" rx="36" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle decorative ambient circles -->
+  <circle cx="430" cy="80" r="70" fill="#8ce600" opacity="0.15"/>
+  <circle cx="80" cy="460" r="100" fill="#8ce600" opacity="0.12"/>
+
+  <!-- Character Group -->
+  <g transform="translate(0, 30)">
+    <!-- Shoulders / Jacket -->
+    <path d="M120 530 C120 410, 150 350, 200 330 L300 330 C350 350, 380 410, 380 530 Z" fill="url(#suitGrad)" filter="url(#softShadow)"/>
+
+    <!-- Shirt V-neck -->
+    <path d="M220 330 L250 420 L280 330 Z" fill="url(#shirtGrad)"/>
+
+    <!-- Neck -->
+    <path d="M225 270 L225 340 L275 340 L275 270 Z" fill="url(#skinGrad)"/>
+
+    <!-- Head -->
+    <ellipse cx="250" cy="220" rx="60" ry="75" fill="url(#skinGrad)"/>
+
+    <!-- Ears -->
+    <ellipse cx="188" cy="225" rx="10" ry="16" fill="#e5b894"/>
+    <ellipse cx="312" cy="225" rx="10" ry="16" fill="#e5b894"/>
+
+    <!-- Headset Band around neck/ears -->
+    <path d="M185 225 C175 140, 325 140, 315 225" fill="none" stroke="#1e293b" stroke-width="7" stroke-linecap="round"/>
+    <!-- Headset Ear Cushions -->
+    <rect x="178" y="210" width="14" height="30" rx="7" fill="#8ce600"/>
+    <rect x="308" y="210" width="14" height="30" rx="7" fill="#8ce600"/>
+    <!-- Mic boom -->
+    <path d="M185 235 Q195 275 225 270" fill="none" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="225" cy="270" r="5" fill="#8ce600"/>
+
+    <!-- Hair -->
+    <path d="M190 205 C185 150, 230 130, 270 135 C310 140, 318 175, 312 210 C300 180, 280 170, 250 170 C220 170, 200 185, 190 205 Z" fill="url(#hairGrad)"/>
+
+    <!-- Eyes, Eyebrows, Nose, Smile -->
+    <path d="M218 198 Q228 193 238 198" fill="none" stroke="#1f2937" stroke-width="3" stroke-linecap="round"/>
+    <path d="M262 198 Q272 193 282 198" fill="none" stroke="#1f2937" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="228" cy="212" r="4.5" fill="#1f2937"/>
+    <circle cx="272" cy="212" r="4.5" fill="#1f2937"/>
+    <path d="M250 216 L248 232 L254 232" fill="none" stroke="#cf9c78" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M236 248 Q250 262 264 248" fill="none" stroke="#b86b4d" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Suit Lapel details -->
+    <path d="M200 330 L220 450 L205 530" fill="none" stroke="#2c3746" stroke-width="3"/>
+    <path d="M300 330 L280 450 L295 530" fill="none" stroke="#2c3746" stroke-width="3"/>
+  </g>
+
+  <!-- Floating Tech Badge -->
+  <g transform="translate(40, 470)" filter="url(#softShadow)">
+    <rect width="210" height="52" rx="26" fill="#ffffff"/>
+    <rect x="8" y="8" width="36" height="36" rx="18" fill="url(#limeBadge)"/>
+    <path d="M21 26 L25 30 L31 22" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="26" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#0f172a">RAMESH PRAVEEN</text>
+    <text x="54" y="40" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#64748b">CSE Undergrad &amp; Dev</text>
+  </g>
+</svg>
